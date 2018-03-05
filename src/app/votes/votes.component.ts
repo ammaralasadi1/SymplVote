@@ -31,7 +31,8 @@ export class VotesComponent implements OnInit {
         this.votes.splice(this.votes.length, 0, vote);
         console.log(response);
         if (response.status === 200) {
-          location.reload();
+          // location.reload();
+          // setTimeout(function(){ location.reload(); }, 2000);
         }
       });
     }
