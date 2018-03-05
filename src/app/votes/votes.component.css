@@ -1,0 +1,5 @@
+.poll-container{min-height: 500px;}
+.poll-title,
+.poll-user {
+  text-transform: capitalize;
+}

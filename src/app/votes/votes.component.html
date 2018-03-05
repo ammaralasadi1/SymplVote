@@ -1,0 +1,34 @@
+<div class="row poll-container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1 flex-col">
+            <form>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Poll Title</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Title of your poll" #title>
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Your name</label>
+                    <input class="btn btn-danger" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Your name" #user>
+                </div>
+                <button class="btn btn-primary" (click)="createVote(title,user)">Submit</button>
+            </form>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-3 col-md-6 poll" *ngFor="let vote of votes; index as i">
+            <div class="card">
+                <div class="card-block">
+                    <h4 class="card-title poll-title">{{vote.title}}</h4>
+                    <p class="card-title poll-user">
+                        <span class="text-muted">Created By:</span> {{vote.user}}</p>
+                    <h2 class="card-text text-center text-danger">{{vote.count}}</h2>
+                    <div class="flex">
+                        <a class="btn btn-success" (click)="updateVote(vote)">UpVote</a>
+                        <a class="btn btn-danger" (click)="deleteVote(vote)">Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

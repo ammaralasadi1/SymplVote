@@ -1,0 +1,84 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">SymplVote</h1>
+        <h4 class="lead">A simple polling app created with Angular 5 and Ruby on Rails Api</h4>
+        <a class="btn btn-primary" data-toggle="modal" data-target="#userStories">User Stories</a>
+        <a class="btn btn-primary" data-toggle="modal" data-target="#process">Process</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<!-- Modal User Stories-->
+<div class="modal fade" id="userStories" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">SympleVote User Stories</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>As a user I should be able to view current polls.</li>
+          <li>As a user I should be able to create and delete my polls.</li>
+          <li>As a user I should be able to Up the vote on a specific poll.</li>
+          <li>As a user my polls and votes should persist in the database.</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal process-->
+<div class="modal fade" id="process" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">SympleVote User Stories</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h6 class="text-info">MVP</h6>
+        <ul>
+          <li>Create a Restful Api using Ruby on Rail framework that consist of one model to serve JSON to SPA + Postgresql.</li>
+          <li>Build an Angular 5 front-end with three components.</li>
+          <li>Consume HTTP services and make sure all the methods are available.</li>
+          <li>Test functionality.</li>
+          <li>Sort the data by vote count on the back-end.</li>
+        </ul>
+        <h6 class="text-info">Silver</h6>
+        <ul>
+          <ul>
+            <li>Improve UX and error validations.</li>
+            <li>Fix known bugs with application</li>
+          </ul>
+        </ul>
+        <h6 class="text-info">Gold</h6>
+        <ul>
+          <li>User Bootstrap to polish the UI</li>
+          <li>Apply user authentication to make ensure each user votes once
+            <span class="text-muted">Not achieved</span>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
